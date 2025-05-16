@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
     // Convert stream to Response
     return new Response(stream as any, {
       headers: {
-        'Content-Type': 'video/mp4',
+        'Content-Type': 'application/json',
         'Content-Disposition': 'attachment; filename="video.mp4"',
       },
     });
